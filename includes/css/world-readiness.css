@@ -60,3 +60,33 @@ div {
 .bidi-text {
     direction:rtl;   
 }
+
+.bold-text {
+    font-weight: bold;
+}
+
+.sample-text {
+    border: 1px dotted gray;
+    color: blue;
+    font-size: 1.5em;
+    margin: 1%;
+    padding: 1%;
+    width: 90%;
+}
+
+.sample-image-125px {
+    border: 1px dotted gray;
+    margin: 1%;
+    width: 125px;
+}
+
+.sample-image-150px {
+    border: 1px dotted gray;
+    margin: 1%;
+    width: 150px;
+}
+
+
+li {
+ padding: 3px;
+}
