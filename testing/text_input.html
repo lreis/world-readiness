@@ -1,0 +1,203 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="title" content="Text Input">
+<meta name="author" content="Leandro Reis">
+
+<link rel="stylesheet" type="text/css" href="../includes/css/world-readiness.css"><title>Text Input</title>
+</head>
+
+<body>
+<div class="top-header">Text Input</div>
+<div class="section-header">Requirements</div>
+    <div>In an internationalized application, users can successfully input characters from any writing system by typing in localized physical or virtual keyboards, or by copying and pasting text from other areas of an application or from other applications, without experiencing character corruption.</div>
+    <div>The most widely used writing sytems in the world are: Latin, Cyrillic, Japanese, Simplified Chinese, Traditional Chinese, Korean, Devanagari and Arabic. Text input using characters from these writing systems provides sufficient internationalization testing coverage.</div>
+
+<div class="section-header">Typical usage</div>
+    <div>Text input can take place in a variety of places within a software application, for example:</div>
+    <ul>
+    <li>Document names</li>
+    <li>Document content</li>
+    <li>Chat windows</li>
+    <li>Comment boxes</li>
+    </ul>
+
+<div class="section-header">Installing and selecting localized keyboards</div>
+    <div>In order to check text input in multiple languages (i.e. writing systems), it's necessary to use localized keyboards that contain the necessary international characters. In many mobile devices (smart phones, tablets), text input takes place via localized virtual keyboards that can be easily activated via the user interface.</div>
+    <div>In desktop machines, users can plug different localized physical keyboards. In the absence of such physical keyboards (typically the case when testing multiple writing systems), it's possible to use localized virtual keyboards. </div>
+    
+<div>Instructions for activating localized virtual keyboards in multiple languages can be found below:</div>
+    <ul>
+    <li><a href="http://support.microsoft.com/kb/258824" target="_blank">Windows</a></li>
+    <li><a href="http://support.apple.com/kb/PH11042" target="_blank">MacOS</a></li>
+    <li><a href="http://support.apple.com/kb/HT4509" target="_blank">iOS</a></li>
+    </ul>
+
+<div class="section-header">Text input by typing</div>
+    <div>Once the proper localized keyboard (physical or virtual) is activated and selected, proceed to type the sample strings provided for each major writing system, in all areas of the product that you are assessing which accepts text input.</div>
+    <div>If you are using a virtual keyboard with an <strong>English (U.S.)</strong> physical keyboard, type the keys shown immediately below each sample character. </div>
+
+<div class="section-subheader">Latin</div>
+    <div>The Vietnamese language provides a good test case for the Latin writing system, since it contains a number of unique accented characters, as well as accented characters that are used by a large number of widely-used European languages.</div>
+    <div>To assess text input for Latin characters, use one or more of the following:</div>
+    <ul>
+    <li>Physical Vietnamese keyboard</li>
+    <li><strong>Vietnamese (Vietnam) - Vietnamese </strong>(Windows) virtual keyboard</li>
+    <li><strong>Vietnamese</strong> (Mac) virtual keyboard</li>
+    <li><strong>Vietnamese</strong> (iOS) virtual keyboard</li>
+    </ul>
+    
+    <div>To type Latin characters using a virtual keyboard, type the following sample string:</div>
+    <table class="table_text_input">
+    <tr><th>&nbsp;</th><th>Q</th><th>u</th><th>ố</th><th>c</th><th>&nbsp;</th><th>N</th><th>g</th><th>ữ</th><th>→</th><th>Quốc&nbsp;Ngư</th></tr>
+    <tr><td>Win, MacOS</td><td>shift + q</td><td>u</td><td>4 + 8</td><td>c</td><td>&lt;space&gt;</td><td>shift + n</td><td>g</td><td>[ + 7</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>iOS</td><td>shift, q</td><td>u</td><td>press and hold "o", <br>select "ố"</td><td>c</td><td>&lt;space&gt;</td><td>shift + n</td><td>g</td><td>press and hold "u", <br>select "ữ"</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    </table>
+
+<div class="section-subheader">Cyrillic</div>
+    <div>The Russian language provides a good test case for the Cyrillic writing system, as it's by far the most widely used language that uses it.</div>
+    <div>To assess text input for Cyrillic characters, use one or more of the following:</div>
+    <ul>
+    <li>Physical Russian keyboard</li>
+    <li><strong>Russian (Russia)</strong> (Windows) virtual keyboard</li>
+    <li><strong>Russian</strong> (Mac) virtual keyboard</li>
+    <li><strong>Russian</strong> (iOS) virtual keyboard</li>
+    </ul>
+    
+    <div>To type Cyrillic characters using a virtual keyboard, type the following sample string:</div>
+    <table class="table_text_input">
+        <tr><th>&nbsp;</th><th>К</th><th>и</th><th>р</th><th>и</th><th>п</th><th>п</th><th>и</th><th>ц</th><th>а</th><th>→</th><th>Кириппица</th></tr>
+        <tr><td>Win, MacOS</td><td>shift + r</td><td>b</td><td>h</td><td>b</td><td>g</td><td>g</td><td>b</td><td>w</td><td>f</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    </table>
+
+<div class="section-subheader">Japanese</div>
+    <div>To assess text input for Japanese characters, use one or more of the following:</div>
+    <ul>
+    <li><strong>Japanese (Japan) - Japanese</strong> (Windows) virtual keyboard</li>
+    <li><strong>Hiragana</strong> (Mac) virtual keyboard</li>
+    <li><strong>Japanese - Romaji </strong> (iOS) virtual keyboard</li>
+    </ul>
+    
+    <div>To type Japanese characters using a virtual keyboard, type the following sample string:</div>
+    
+    <table class="table_text_input">
+        <tr><th>に</th><th>ほ</th><th>ん</th><th>ご</th><th>&nbsp;</th><th>→</th><th>日本語</th></tr>
+        <tr><td>ni</td><td>ho</td><td>nn</td><td>go</td><td>space + enter (Win, MacOS)<br>select kanji (iOS)</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    </table>
+    
+    
+<div class="section-subheader">Korean</div>
+    <div>To assess text input for Korean characters, use one or more of the following:</div>
+    <ul>
+    <li><strong>Korean (Korea) - Microsoft IME</strong> (Windows) virtual keyboard</li>
+    <li><strong>2-Set Korean</strong> (Mac) virtual keyboard</li>
+    <li><strong>Korean</strong> (iOS) virtual keyboard</li>
+    </ul>
+    
+    <div>To type Korean characters using a virtual keyboard, type the following sample string:</div>
+    <table class="table_text_input">
+        <tr><th>ㄷ ㅐ </th><th>ㅎ ㅏ ㄴ </th><th>ㅁ ㅣ ㄴ </th><th>ㄱ ㅜ ㄱ</th><th>&nbsp;</th><th>→</th><th>대한민국</th></tr>
+        <tr><th>대</th><th>한</th><th>민</th><th>국</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr>
+        <tr><td>eo</td><td>gks</td><td>als</td><td>rnr</td><td>&lt;space&gt;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    </table>    
+    
+<div class="section-subheader">Simplified Chinese</div>
+    <div>To assess text input for Simplified Chinese characters, use one or more of the following:</div>
+    <ul>
+    <li><strong>Chinese (Simplified, PRC) - Microsoft PinYin ABC Input Style</strong> (Windows) virtual keyboard</li>
+    <li><strong>Chinese Simplified - Pinyin</strong> (Mac) virtual keyboard</li>
+    <li><strong>Chinese - Simplified (Pinyin) </strong> (iOS) virtual keyboard</li>
+    </ul>
+    
+    <div>To type Simplified Chinese characters using a virtual keyboard, type the following sample string:</div>
+    <table class="table_text_input">
+        <tr><th>&nbsp;</th><th>简</th><th>体</th><th>中</th><th>文</th><th>→</th><th>简体中文</th></tr>
+        <tr><td>Win</td><td>"jian" +&nbsp;<br>&lt;space&gt; + <br>pg down + 6</td><td>"ti" +&nbsp;<br>&lt;space&gt; + 3</td><td>"zhong" + <br>&lt;space&gt;</td><td>"wen" +&nbsp;<br>&lt;space&gt; + 2</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td>MacOS</td><td>"jian" +&nbsp;<br>&lt;space&gt; + <br>2nd row + 5</td><td>"ti" +&nbsp;<br>&lt;space&gt; + 3</td><td>"zhong" + <br>&lt;space&gt;</td><td>"wen" +&nbsp;<br>&lt;space&gt; + 2</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td>iOS</td><td>"jian",<br>select Hanzi</td><td>"ti",<br>select Hanzi</td><td>"zhong",<br>select Hanzi</td><td>"wen",<br>select Hanzi</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    </table>
+    
+<div class="section-subheader">Traditional Chinese</div>
+    <div>To assess text input for Traditional Chinese characters, use one or more of the following:</div>
+    <ul>
+    <li><strong>Chinese (Traditional, Taiwan) - New Phonetic (Taiwan), Han Yu Pinyin</strong> (Windows) virtual keyboard</li>
+    <li><strong>Pinyin - Traditional</strong> (Mac) virtual keyboard</li>
+    <li><strong>Chinese Traditional - Pinyin</strong> (iOS) virtual keyboard</li>
+    </ul>
+    
+    <div>To type Traditional Chinese characters using a virtual keyboard, type the following sample string:</div>
+    <table class="table_text_input">
+        <tr><th>&nbsp;</th><th>繁</th><th>體</th><th>中</th><th>文</th><th>&nbsp;</th><th>→</th><th>繁體中文</th></tr>
+        <tr><td>Win, MacOS</td><td>"fan"</td><td>"ti"</td><td>"zhong"</td><td>"wen"</td><td>&lt;space&gt;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td>iOS</td><td>"fan", <br>select Hanzi&nbsp;<br></td><td>"ti",<br>select Hanzi</td><td>"zhong",<br>select Hanzi</td><td>"wen",<br>select Hanzi</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    </table>
+    
+<div class="section-subheader">Devanagari</div>
+    <div>The Hindi language provides a good test case for the Devanagari writing system, as it's by far the most widely used language that uses it.</div>
+    <div>To assess text input for Devanagari characters, use one or more of the following:</div>
+    <ul>
+    <li>Physical Hindi keyboard</li>
+    <li><strong>Hindi (India), Devanagari - INSCRIPT </strong> (Windows) virtual keyboard</li>
+    <li><strong>Hindi (Devanagari)</strong> (Mac) virtual keyboard</li>
+    <li><strong>Hindi</strong> (iOS) virtual keyboard</li>
+    </ul>
+    
+    <div>To type Devanagari characters using a virtual keyboard, type the following sample string:</div>
+    <table class="table_text_input">
+        <tr><th></th></th><th>द</th><th>े</th><th>व</th><th>न</th><th>ा</th><th>ग</th><th>र</th><th>ी</th><th>→</th><th>देवनागरी</th></tr>
+        <tr><td>Win, MacOS</td><td>o</td><td>s</td><td>b</td><td>v</td><td>e</td><td>i</td><td>j</td><td>r</td><td></td><td></td></tr>
+    </table>
+    
+<div class="section-subheader">Arabic</div>
+    <div>The Arabic language provides a good test case for the Arabic writing system, as it's by far the most widely used language that uses it.</div>
+    <div>To assess text input for Arabic characters, use one or more of the following:</div>
+    <ul>
+    <li>Physical Arabic keyboard</li>
+    <li><strong>Arabic (U.A.E.) - Arabic (101)</strong> (Windows) virtual keyboard</li>
+    <li><strong>Arabic</strong> (Mac) virtual keyboard</li>
+    <li><strong>Arabic</strong> (iOS) virtual keyboard</li>
+    </ul>
+    
+    <div>To type Arabic characters using a virtual keyboard, type the following sample string:</div>
+    <table class="table_text_input">
+        <tr><th>&nbsp;</th><th>ا</th><th>ل</th><th>ع</th><th>ر</th><th>ب</th><th>ي</th><th>ة</th><th>→</th><th>العربية</th></tr>
+        <tr><td>Win</td><td>h</td><td>g</td><td>u</td><td>v</td><td>f</td><td>d</td><td>m</td><td></td><td></td></tr>
+        <tr><td>MacOS</td><td>h</td><td>g</td><td>u</td><td>v</td><td>f</td><td>d</td><td>]</td><td></td><td></td></tr>
+    </table>
+
+
+<div class="section-header">Text input by copying and pasting on MacOS or Windows</div>
+<div>Copy and paste the sample text below onto all editable text areas of the application you are assessing. Check whether there's any character corruption.</div>
+<div class="section-subheader">Latin</div>
+<div class="sample-text">Tất cả mọi người sinh ra đều được tự do và bình đẳng về nhân phẩm và quyền. Mọi con người đều được tạo hoá ban cho lý trí và lương tâm và cần phải đối xử với nhau trong tình bằng hữu.</div>
+
+<div class="section-subheader">Cyrillic</div>  
+<div class="sample-text">Всі люди народжуються вільними і рівними у своїй гідності та правах. Вони наділені розумом і совістю і повинні діяти у відношенні один до одного в дусі братерства.</div>
+
+<div class="section-subheader">Japanese</div>  
+<div class="sample-text">すべての人間は、生まれながらにして自由であり、かつ、尊厳と権利とについて平等である。人間は、理性と良心とを授けられており、互いに同胞の精神をもって行動しなければならない。</div>
+
+<div class="section-subheader">Korean</div>  
+<div class="sample-text">모든 인간은 태어날 때부터 자유로우며 그 존엄과 권리에 있어 동등하다. 인간은 천부적으로 이성과 양심을 부여받았으며 서로 형제애의 정신으로 행동하여야 한다.</div>
+
+<div class="section-subheader">Simplified Chinese</div>  
+<div class="sample-text">人人生而自由,在尊严和权利上一律平等。他们赋有理性和良心,并应以兄弟关系的精神相对待。</div>
+
+<div class="section-subheader">Traditional Chinese</div>  
+<div class="sample-text">人人生而自由，在尊嚴和權利上一律平等。他們賦有理性和良心，並應以兄弟關係的精神相對待。</div>
+
+<div class="section-subheader">Devanagari</div>  
+<div class="sample-text">सभी मनुष्यों को गौरव और अधिकारों के मामले में जन्मजात स्वतन्त्रता और समानता प्राप्त है । उन्हें बुद्घि और अन्तरात्मा की देन प्राप्त है और परस्पर उन्हें भाईचारे के भाव से बर्ताव करना चाहिए ।</div>
+
+<div class="section-subheader">Arabic</div>  
+<div class="sample-text  bidi-text">يولد جميع الناس أحراراً متساوين في الكرامة والحقوق، وقد وهبوا عقلاً وضميراً وعليهم أن يعامل بعضهم بعضاً بروح الإخاء</div>
+
+
+<div class="section-header">Text input by copying and pasting on iOS or Android</div>
+<ul>
+    <li>Type the sample strings as instructed in the <strong>Text input by typing</strong> section, in any available text-editing iOS or Android utility. </li>
+    <li>Copy and paste the string into all editable text areas of the product you are assessing, and check whether there's any character corruption.</li>
+</ul>    
+</body>
+</html>
