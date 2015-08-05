@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="title" content="File Operations">
+    <meta name="author" content="Leandro Reis">
+    <link rel="stylesheet" type="text/css" href="../includes/css/world-readiness.css"><title>File Operations</title>
+</head>
+
+<body>
+<div class="top-header">File Operations</div>
+<a href="http://lreis.github.io/world-readiness/">toc</a>
+
+<div class="section-header">Requirements</div>
+<div>In an internationalized application, users can successfully read/import content from, or write/export content to a file / folder using characters from any script.</div>
+<div>The most widely used scripts in the world are: Latin, Cyrillic, Simplified Chinese, Traditional Chinese, Korean, Devanagari, Arabic, and the ones used by the Japanese writing system. File operations involving characters from these scripts provides sufficient internationalization testing coverage.</div>
+
+<div class="section-header">Typical usage</div>
+<ul>
+    <li>Files containing content created by users</li>
+    <li>User preference files</li>
+</ul>
+
+<div class="section-header">Typical bugs</div>
+<ul>
+    <li>Corrupted characters in filenames</li>
+    <li>Inability to read content from files with filenames containing non-ASCII characters</li>
+</ul>
+    
+    
+<div class="section-header">How to test</div>
+<div class="section-subheader">Reading from files and documents</div>
+<ol>
+    <li>If your product provides the ability to <strong>read</strong> (i.e. open from and/or import)content from a file or document, rename such input document or file by copying and pasting (if testing product on a non-mobile device) or typing (if testing product on a mobile device) sample strings for each script specified in the section <strong>Sample strings</strong> below. For typing instructions, read the instructions in the <a href="http://lreis.github.io/world-readiness/testing/text_input.html" target="_blank">Text input</a> article. If possible, also create and/or rename its parent folder with the same sample string.</li>
+    <li>Verify whether file or document can be successfully opened without corruption of its content.</li>
+    <li>Repeat this step for every platform (MacOS, Windows, iOS or Android), that your product is available in.</li>
+</ol>
+
+<div class="section-subheader">Writing to files and documents</div>
+<ol>
+    <li>If your product provides the ability to <strong>write</strong> (i.e. save to and/or export) content from a file or document, name such output document to use the sample strings for each script specified in the section <strong>Sample strings</strong> below.</li>
+    <li>Check whether file or document name matches the sample string, and that it can be re-opened successfully without corruption of its content. </li>
+    <li>Repeat this step for every platform (MacOS, Windows, or iOS), that your product is available in, and report any issues, as described in the previous section.</li>
+</ol>    
+    
+<div class="section-subheader">Sample strings</div>    
+<div class="bold-text">Latin</div> 
+<div class = "sample-text">Quốc Ngữ</div>   
+    
+<div class="bold-text">Cyrillic</div> 
+<div class = "sample-text">Кириппица</div>  
+    
+<div class="bold-text">Japanese</div> 
+<div class = "sample-text">日本語</div>  
+    
+<div class="bold-text">Korean</div> 
+<div class = "sample-text">대한민국</div>  
+    
+<div class="bold-text">Simplified Chinese</div> 
+<div class = "sample-text">简体中文</div>  
+    
+<div class="bold-text">Traditional Chinese</div> 
+<div class = "sample-text">繁體中文</div>  
+        
+<div class="bold-text">Devanagari</div> 
+<div class = "sample-text">देवनागरी</div>    
+    
+<div class="bold-text">Arabic</div> 
+<div class = "sample-text" dir="rtl">العربية</div>  
+    
+</body>
+</html>
