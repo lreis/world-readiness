@@ -1,5 +1,9 @@
 body {
+    border: 1px dotted gray;
+    border-radius: 10px;
     font-family: sans-serif;
+    margin: 1%;
+    padding: 1%;
 }
 
 div {
@@ -37,10 +41,17 @@ div {
     padding: 0.5em;
 }
 
+.table_sample_text,
 .table_text_input {
     border: 1px solid black;
     margin: 1em;
     text-align: center;
+}
+
+.table_sample_text th {
+    border: 1px dotted gray;
+    color: black;
+    padding: 0.25em;
 }
 
 .table_text_input th {
@@ -50,6 +61,7 @@ div {
     padding: 0.25em;
 }
 
+.table_sample_text td,
 .table_text_input td {
     border: 1px dotted gray;
     color: blue;

@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="title" content="Dates and Times">
+    <meta name="author" content="Leandro Reis">
+    <link rel="stylesheet" type="text/css" href="../includes/css/world-readiness.css">
+    <title>Dates and Times</title>
+</head>
+
+<body>
+<div class="top-header">Dates and Times</div>
+<a href="http://lreis.github.io/world-readiness/">toc</a>
+
+<div class="section-header">Requirements</div>
+<div>Products should display dates and times formatted according to the regional conventions of the locale of the current operating system (for desktop or touch applications) or browser (for web applications).</div>
+<div>Dates and times can be represented in short, medium, long or full formats. It's up to the product owner to decide which format is more appropriate for each area of the product.</div>
+
+<div class="section-header">What's affected by locale changes</div>
+<ul>
+    <li>Positioning of day, month and year</li>
+    <li>Use of 12-hr vs 24-hr formats</li>
+    <li>Use of suffixes to indicate time of day (e.g. A.M./P.M)</li>
+    <li>Capitalization of month names</li>
+</ul>
+
+ <div class="section-header">Examples</div>
+<table class="table_sample_text">
+    <tr><th>Locale</th><th>Full date format</th></tr>
+    <tr><td>Afrikaans (South Africa)</td><td>Dinsdag 30 Julie 2013 2:27:32 nm. Pasifiese dagligtyd</td></tr>
+    <tr><td>Albanian (Albania)</td><td>e martë, 30 korrik 2013 2.27.32.MD GMT-07:00</td></tr>
+    <tr><td>English (U.S.)</td><td>Tuesday, July 30, 2013 at 2:27:32 PM Pacific Daylight Time</td></tr>
+    <tr><td>English (U.K.)</td><td>uesday, 30 July 2013 11:27:32 Pacific Daylight Time</td></tr>
+    <tr><td>Japanese (Japan)</td><td>2013年7月30日火曜日 14時27分32秒 アメリカ太平洋夏時間</td></tr>
+    <tr><td>Swedish (Sweden)</td><td>tisdagen den 30:e juli 2013 kl. 14:27:32 Pacific, sommartid</td></tr>
+    <tr><td>Turkish (Turkey)</td><td>30 Temmuz 2013 Salı 14:27:32 Kuzey Amerika Pasifik Yaz Saati</td></tr>
+</table>
+    
+<div class="section-header">How to test</div>
+<ol>
+    <li>Identify all areas of the product that display dates and times.</li>
+    <li>Change the environment locale, in order to verify that the date and time formats change and match accordingly in such areas. 
+        <ul>
+            <li>Instructions on how to change the environment locale can be found <a href="changing_the_environment_locale.html" target="_blank">here</a>.</li>
+            <li>A comprehensive list of locale-specific dates and time formats can be found in the <a href="http://st.unicode.org/cldr-apps/v#locales" target="_blank">CLDR site</a>. </li>
+        </ul>        
+    </li>
+    <li>For example, to check what the date and time formats for the <strong>French (Canada)</strong> locale is, in the CLDR page (link provided in the previous step), type 'French' in the 'Locale' search box, then select 'Canada' from the list of countries. Then, select 'Date and Time' > 'Gregorian', and scroll down to the 'Formats - Standard' sections.</li>
+</ol>
+  
+</body>
+</html>
