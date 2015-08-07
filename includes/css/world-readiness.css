@@ -1,9 +1,9 @@
 body {
-    border: 1px dotted gray;
-    border-radius: 15px;
     font-family: sans-serif;
+    height: 90%;
     margin: 1%;
     padding: 1%;
+    width: 90%;
 }
 
 div {
@@ -151,4 +151,24 @@ li {
 
 .text-align-right {
     text-align: right !important;
+}
+
+.footer {
+    border-top: 1px solid black;
+    bottom: 10px;
+    color: gray;
+    font-style: italic;
+    margin-top: 25px;
+    padding: 10px;
+    position: relative;
+}
+
+.footer-absolute {
+    border-top: 1px solid black;
+    bottom: 10px;
+    color: gray;
+    font-style: italic;
+    margin-top: 25px;
+    padding: 10px;
+    position: absolute;
 }
